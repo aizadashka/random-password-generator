@@ -8,13 +8,21 @@ body {
 }
 
 .main-box {
-    height: 80%;
-    width: 70%;
     max-width: 500px;
-    max-height: 600px;
+    width: 100%;
     display: block;
     background: #1F2937;
-    padding-left: 52px;
+    padding: 1% 5% 3%;
+}
+@media (max-width: 500px) {
+  .main-box{
+    height: 100%;
+  }
+
+  .tables {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
 }
 #white-header {
     padding-top: 52px;
@@ -54,14 +62,14 @@ body {
 
 .tables {
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    width: 446px;
+    justify-content: space-around;
     border-top: 1px solid #2F3E53;
     margin-top: 35px;
+    margin-bottom: 35px;
 }
+
 .passwords {
-    width: 211px;
+    width: 230px;
     height: 25px;
     border: none;
     border-radius: 6px;
